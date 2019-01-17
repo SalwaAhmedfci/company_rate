@@ -8,7 +8,7 @@ import urllib.request  as urllib2
 # App config.
 import requests
 
-#
+
 app = Flask(__name__)
 #
 #
@@ -27,7 +27,7 @@ def Welcome_page():
 
 def soup(url, headers):
     session = requests.Session()
-    req = session.get(url, headers=headers)
+    req = session.get(url, headers=headers )
     bs = BeautifulSoup(req.text, 'html.parser')
     return bs
 
@@ -65,6 +65,7 @@ def my_form_post():
         mylist_names.append(matched_companies[count].get_text())
         mylist_rates.append(mylist[count])
         count = count + 1
+
 
     return render_template("show.html", companyname=companyname, mylist_rates=mylist_rates, mylist_names=mylist_names)
 

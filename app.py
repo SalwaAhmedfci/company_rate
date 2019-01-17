@@ -3,23 +3,26 @@
 # !/usr/bin/env python
 from bs4 import BeautifulSoup
 from userAgent import randomUserAgents
-from flask import Flask, render_template,request
+from flask import Flask, render_template, request
 import urllib.request  as urllib2
 # App config.
 import requests
+
 #
 app = Flask(__name__)
 #
 #
 #
 APPLICATION_NAME = "CompanyApp"
+
+
 #
 #
- # Welcome page
+# Welcome page
 @app.route('/')
 @app.route('/Home/')
 def Welcome_page():
-     return render_template("welcome.html")
+    return render_template("welcome.html")
 
 
 def soup(url, headers):
@@ -29,7 +32,9 @@ def soup(url, headers):
     return bs
 
 
-@app.route('/', methods=['POST','GET'])
+# eiHdrModule module snug
+
+@app.route('/', methods=['POST', 'GET'])
 def my_form_post():
     companyname = request.form['company_name']
 
@@ -42,27 +47,26 @@ def my_form_post():
     bs = soup(page_link, head)
 
     mylist = []
+    matched_companies = []
 
-    matched_companies = bs.findAll('a', {'class': "tightAll h2"})
-    ratings = bs.findAll('div', {'class': "header cell info"})
-
-    for rate in ratings:
+    main_div = bs.findAll('div', {'class': "eiHdrModule module snug"})
+    for rate in main_div:
         if rate.find('span', {'class': "bigRating strong margRtSm h2"}) is not None:
             mylist.append(rate.find('span', {'class': "bigRating strong margRtSm h2"}).get_text())
         else:
             mylist.append("Not rated yet")
-
+        matched_companies.append(rate.find('a', {'class': "tightAll h2"}))
         # loop of printing
-        count = 0
+
     mylist_names = []
     mylist_rates = []
+    count = 0
     while count < matched_companies.__len__():
         mylist_names.append(matched_companies[count].get_text())
         mylist_rates.append(mylist[count])
         count = count + 1
 
-
-    return render_template("show.html",companyname =companyname,mylist_rates=mylist_rates,mylist_names=mylist_names)
+    return render_template("show.html", companyname=companyname, mylist_rates=mylist_rates, mylist_names=mylist_names)
 
 
 # print (rate)

@@ -13,9 +13,6 @@ app = Flask(__name__)
 #
 #
 #
-APPLICATION_NAME = "CompanyApp"
-
-
 #
 #
 

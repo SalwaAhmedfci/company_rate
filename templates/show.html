@@ -33,7 +33,7 @@ tr:nth-child(even) {
 <div class="row">
     <div class="col-xs-6">
         <table>
-
+            <th>Company</th>
   {%for i in mylist_names%}
     <tr><td>{{i}}</td>
     </tr>
@@ -42,7 +42,17 @@ tr:nth-child(even) {
         </table>
     </div>
 
+    <div class="col-xs-6">
+        <table>
+    <th>Rating</th>
+      {%for i in mylist_rates%}
+    <tr><td>{{i}}</td>
+    </tr>
+      {%endfor%}
 
+        </table>
+
+    </div>
 </div>
 
 

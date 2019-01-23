@@ -1,70 +1,45 @@
 import os
 import sys
 from cgitb import text
-
+from flask import Flask
 from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
 from flask import jsonify
 from sqlalchemy.orm import sessionmaker
+from flask_sqlalchemy import SQLAlchemy
 
-Base = declarative_base()
+
+# from flask_bootsrap import Bootstrap
+
+app = Flask(__name__)
+
+app.config['SQLALCHEMY_DATABASE_URI']= 'sqlite://///home/salwa/PycharmProjects/company_rate/data.sqlite'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
 
 #`uri`, `rank`, `name`, `country`, `profits`, `marketValue`, `ceo`, `revenue`, `headquarters`, `industry`, `state`, `SIC`
 
-class fobres(Base):
+
+
+class fobres(db.Model):
     __tablename__ = 'forbesglobal2000_2016'
 
-    id = Column(Integer, primary_key=True)
-    name = Column(String(250))
-    uri = Column(String(250))
-    rank = Column(String(250))
-    name = Column(String(250))
-    country = Column(String(250))
-    profits= Column(String(250))
-    marketValue = Column(String(250))
-    ceo = Column(String(250))
-    revenue = Column(String(250))
-    headquarters = Column(String(250))
-    industry = Column(String(250))
-    state = Column(String(250))
-    SIC = Column(String(250))
+    id = db.Column('id',db.Integer, primary_key=True)
+    name = db.Column('name',db.String(250))
+    uri = db.Column('uri',db.String(250))
+    rank = db.Column('rank',db.String(250))
+    country = db.Column('country',db.String(250))
+    profits= db.Column('profits',db.String(250))
+    marketValue = db.Column('marketValue',db.String(250))
+    ceo = db.Column('ceo',db.String(250))
+    revenue = db.Column('revenue',db.String(250))
+    headquarters = db.Column('headquarters',db.String(250))
+    industry = db.Column('industry',db.String(250))
+    state = db.Column('state',db.String(250))
+    SIC = db.Column('SIC',db.String(250))
 
 
-
-# configuration part
-
-engine = create_engine('sqlite://///home/salwa/PycharmProjects/company_rate/data.sqlite')
-
-Session = sessionmaker(bind=engine, autocommit=True)
-session = Session()
-session.begin()
-try:
-    Fobres = session.query(fobres).all()
-    session.commit()
-
-    for f in Fobres:
-
-        print(f.id)
-        print(f.industry)
-        print(f.profits)
-        print(f.revenue)
-        print(f.market_value)
-
-except:
-    session.rollback()
-    raise
-
-#market valuation, revenue, profits and industry
-#uri
-
-
-# for f in forbes:
-#    print( f.id)
-#    print(f.industry)
-#    print(f.profits)
-#    print(f.revenue)
-#    print(f.market_value)
 
 

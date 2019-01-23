@@ -4,12 +4,13 @@
 from bs4 import BeautifulSoup
 from userAgent import randomUserAgents
 from flask import Flask, render_template, request
-import urllib.request  as urllib2
-# App config.
+import urllib  as urllib2
+from sqlalchemy import create_engine, asc
+from sqlalchemy.orm import sessionmaker
+from database_setup import *
+from flask import session as login_session
 import requests
 
-
-app = Flask(__name__)
 #
 #
 #
@@ -69,4 +70,4 @@ def my_form_post():
 
 if __name__ == '__main__':
 
-     app.run()
+     app.run(debug=True)

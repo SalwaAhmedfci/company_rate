@@ -3,14 +3,248 @@
   <component name="ChangeListManager">
     <list default="true" id="240e099f-907f-49b2-9be8-d1571d7a6405" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/data.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/database_setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/excrating.py" beforeDir="false" afterPath="$PROJECT_DIR$/excrating.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/SQLAlchemy-1.2.16-py3.6.egg-info/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/SQLAlchemy-1.2.16-py3.6.egg-info/SOURCES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/SQLAlchemy-1.2.16-py3.6.egg-info/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/SQLAlchemy-1.2.16-py3.6.egg-info/installed-files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/SQLAlchemy-1.2.16-py3.6.egg-info/requires.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/SQLAlchemy-1.2.16-py3.6.egg-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/connectors/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/connectors/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/connectors/mxodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/connectors/mxodbc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/connectors/pyodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/connectors/pyodbc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/connectors/zxJDBC.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/connectors/zxJDBC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/cprocessors.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/cprocessors.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/cresultproxy.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/cresultproxy.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/cutils.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/cutils.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/databases/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/databases/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/firebird/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/firebird/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/firebird/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/firebird/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/firebird/fdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/firebird/fdb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/firebird/kinterbasdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/firebird/kinterbasdb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/adodbapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/adodbapi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/information_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/information_schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/mxodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/mxodbc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/pymssql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/pymssql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/pyodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/pyodbc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/zxjdbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/zxjdbc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/cymysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/cymysql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/dml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/enumerated.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/gaerdbms.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/gaerdbms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/mysqlconnector.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/mysqlconnector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/mysqldb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/mysqldb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/oursql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/oursql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/pymysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/pymysql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/pyodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/pyodbc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/reflection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/zxjdbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/zxjdbc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/oracle/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/oracle/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/oracle/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/oracle/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/oracle/cx_oracle.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/oracle/cx_oracle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/oracle/zxjdbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/oracle/zxjdbc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/array.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/dml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/ext.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/hstore.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/hstore.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/pg8000.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/pg8000.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/psycopg2cffi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/pygresql.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/pypostgresql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/pypostgresql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/ranges.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/ranges.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/zxjdbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/postgresql/zxjdbc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sqlite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sqlite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sqlite/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sqlite/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sqlite/pysqlcipher.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sqlite/pysqlite.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sqlite/pysqlite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sybase/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sybase/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sybase/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sybase/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sybase/mxodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sybase/mxodbc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sybase/pyodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sybase/pyodbc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sybase/pysybase.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/dialects/sybase/pysybase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/default.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/default.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/interfaces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/reflection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/reflection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/result.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/result.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/threadlocal.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/threadlocal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/url.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/engine/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/event/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/event/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/event/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/event/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/event/attr.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/event/attr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/event/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/event/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/event/legacy.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/event/legacy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/event/registry.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/event/registry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/exc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/exc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/associationproxy.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/associationproxy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/automap.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/automap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/baked.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/compiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/compiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/declarative/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/declarative/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/declarative/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/declarative/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/declarative/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/declarative/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/declarative/clsregistry.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/declarative/clsregistry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/horizontal_shard.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/horizontal_shard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/hybrid.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/hybrid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/indexable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/instrumentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/instrumentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/mutable.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/mutable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/orderinglist.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/orderinglist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/ext/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/inspection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/inspection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/interfaces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/attributes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/attributes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/collections.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/collections.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/dependency.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/dependency.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/deprecated_interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/deprecated_interfaces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/descriptor_props.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/descriptor_props.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/dynamic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/evaluator.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/evaluator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/exc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/exc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/identity.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/identity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/instrumentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/instrumentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/interfaces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/loading.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/loading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/path_registry.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/path_registry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/properties.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/state.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/state.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/strategies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/strategy_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/strategy_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/sync.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/sync.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/orm/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/pool.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/pool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/processors.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/processors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/annotation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/compiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/compiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/crud.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/ddl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/ddl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/default_comparator.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/default_comparator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/dml.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/dml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/elements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/expression.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/expression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/naming.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/naming.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/operators.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/operators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/selectable.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/selectable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/sqltypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/sqltypes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/type_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/type_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/visitors.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/sql/visitors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/assertions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/assertions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/assertsql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/assertsql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/engines.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/engines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/entities.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/entities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/exclusions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/exclusions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/fixtures.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/fixtures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/mock.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/mock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/pickleable.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/pickleable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/plugin/bootstrap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/plugin/noseplugin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/plugin/noseplugin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/plugin/plugin_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/plugin/plugin_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/plugin/pytestplugin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/plugin/pytestplugin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/profiling.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/profiling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/provision.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/replay_fixture.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/requirements.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/requirements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_cte.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_ddl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_ddl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_dialect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_reflection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_reflection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_select.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_select.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_sequence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_types.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_types.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_update_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/suite/test_update_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/warnings.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/testing/warnings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/types.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/types.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/_collections.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/_collections.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/deprecations.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/deprecations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/topological.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/sqlalchemy/util/topological.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -26,14 +260,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database_setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://5208634c-389c-4dff-860a-eb5d44075d19/schema/main/table/forbesglobal2000-2016">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -46,8 +277,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/excrating.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database_setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://5208634c-389c-4dff-860a-eb5d44075d19/schema/main/table/sqlite_master">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -76,6 +328,7 @@
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/excrating.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5fd1c6a1-4ecb-46f8-9b4f-51dfe243cd5a/console.sql" />
         <option value="$PROJECT_DIR$/database_setup.py" />
       </list>
     </option>
@@ -107,8 +360,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../CatalogProject" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -157,18 +412,20 @@
       <workItem from="1548157927882" duration="4685000" />
       <workItem from="1548228326506" duration="2184000" />
       <workItem from="1548233734139" duration="9475000" />
-      <workItem from="1548243853001" duration="322000" />
+      <workItem from="1548243853001" duration="3552000" />
+      <workItem from="1548251885599" duration="178000" />
+      <workItem from="1548252100170" duration="2236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36876000" />
+    <option name="totallyTimeSpent" value="42520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49872774" visible="true" weight="0.24095458" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49872774" visible="true" weight="0.24980047" />
       <window_info id="Structure" order="1" sideWeight="0.50127226" side_tool="true" weight="0.24980047" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -180,15 +437,16 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011971" side_tool="true" weight="0.35993487" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49880287" visible="true" weight="0.04709576" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49880287" visible="true" weight="0.32410422" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="13" visible="true" weight="0.04709576" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.035115723" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533235" />
@@ -249,6 +507,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5fd1c6a1-4ecb-46f8-9b4f-51dfe243cd5a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -259,20 +524,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://5208634c-389c-4dff-860a-eb5d44075d19/schema/main/table/forbesglobal2000-2016">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/excrating.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://5208634c-389c-4dff-860a-eb5d44075d19/schema/main/table/sqlite_master">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database_setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        <state relative-caret-position="45">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

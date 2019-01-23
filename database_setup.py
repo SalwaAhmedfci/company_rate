@@ -2,12 +2,6 @@ import os
 import sys
 from cgitb import text
 from flask import Flask
-from sqlalchemy import Column, ForeignKey, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship
-from sqlalchemy import create_engine
-from flask import jsonify
-from sqlalchemy.orm import sessionmaker
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -15,7 +9,8 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI']= 'sqlite://///home/salwa/PycharmProjects/company_rate/data.sqlite'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://///home/salwa/data.sqlite'
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -26,8 +21,8 @@ db = SQLAlchemy(app)
 class fobres(db.Model):
     __tablename__ = 'forbesglobal2000_2016'
 
-    id = db.Column('id',db.Integer, primary_key=True)
-    name = db.Column('name',db.String(250))
+   # id = db.Column('id',db.Integer,primary_key=True )
+    name = db.Column('name',db.String(250),primary_key=True)
     uri = db.Column('uri',db.String(250))
     rank = db.Column('rank',db.String(250))
     country = db.Column('country',db.String(250))

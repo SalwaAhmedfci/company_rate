@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: Active-SQLAlchemy
+Version: 0.4.0
+Summary: 
+==================
+Active-SQLAlchemy
+==================
+
+A framework agnostic wrapper for SQLAlchemy that makes it really easy
+to use by implementing a simple active record like api, while it still uses the db.session underneath
+
+:copyright: © 2014/2015 by `Mardix`.
+:license: MIT, see LICENSE for more details.
+
+
+Home-page: http://github.com/mardix/active-sqlalchemy/
+Author: Mardix
+Author-email: mardix@github.com
+License: MIT
+Download-URL: http://github.com/mardix/active-sqlalchemy/tarball/master
+Description: 
+        ==================
+        Active-SQLAlchemy
+        ==================
+        
+        A framework agnostic wrapper for SQLAlchemy that makes it really easy
+        to use by implementing a simple active record like api, while it still uses the db.session underneath
+        
+        :copyright: © 2014/2015 by `Mardix`.
+        :license: MIT, see LICENSE for more details.
+        
+        
+Keywords: sqlalchemy,flask,active sqlalchemy,orm,active record,mysql,postgresql,pymysql,pg8000,sqlite
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: Implementation :: PyPy

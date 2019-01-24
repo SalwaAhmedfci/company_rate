@@ -4,17 +4,12 @@
 from bs4 import BeautifulSoup
 from userAgent import randomUserAgents
 from flask import Flask, render_template, request
-import urllib  as urllib2
-from sqlalchemy import create_engine, asc
-from sqlalchemy.orm import sessionmaker
 from database_setup import *
-from flask import session as login_session
 import requests
 
 #
 #
 #
-
 
 
 def soup(url, headers):
@@ -35,12 +30,11 @@ def my_form_post():
     elif request.method == 'POST':
         companyname = request.form['company_name']
         head = randomUserAgents()
-
-        page_link = "https://www.glassdoor.com/Reviews/company-reviews.htm?suggestCount=0&suggestChosen=false&clickSource" \
+    #scraping companyrating
+        page1_link = "https://www.glassdoor.com/Reviews/company-reviews.htm?suggestCount=0&suggestChosen=false&clickSource" \
                 "=searchBtn&typedKeyword='{0}'&sc.keyword='{1}'&locT=&locId=&jobType=".format(
         companyname, companyname)
-
-        bs = soup(page_link, head)
+        bs = soup(page1_link, head)
 
         mylist = []
         matched_companies = []
@@ -61,9 +55,13 @@ def my_form_post():
             mylist_names.append(matched_companies[count].get_text())
             mylist_rates.append(mylist[count])
             count = count + 1
-
-
-        return render_template("show.html", companyname=companyname, mylist_rates=mylist_rates, mylist_names=mylist_names)
+        #scraping price
+        page2_link ="https://finance.yahoo.com/quote/{0}?p={1}&.tsrc=fin-srch".format(companyname,companyname)
+        head1 = randomUserAgents()
+        bs2 = soup(page2_link, head1)
+        price = bs2.find('span', {'class': "Trsdu(0.3s)"}).get_text()
+        #showing results
+        return render_template("show.html", companyname=companyname, mylist_rates=mylist_rates, mylist_names=mylist_names, price =price)
 
 
 # print (rate)

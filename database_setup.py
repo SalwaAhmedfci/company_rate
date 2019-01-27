@@ -1,41 +1,49 @@
 import os
 import sys
 from cgitb import text
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
 
+from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship
+from sqlalchemy import create_engine
+from flask import jsonify
 
-# from flask_bootsrap import Bootstrap
-
-app = Flask(__name__)
-
-
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://///home/salwa/data.sqlite'
-
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
+Base = declarative_base()
 
 #`uri`, `rank`, `name`, `country`, `profits`, `marketValue`, `ceo`, `revenue`, `headquarters`, `industry`, `state`, `SIC`
 
 
 
-class fobres(db.Model):
+class Company(Base):
     __tablename__ = 'forbesglobal2000_2016'
 
-   # id = db.Column('id',db.Integer,primary_key=True )
-    name = db.Column('name',db.String(250),primary_key=True)
-    uri = db.Column('uri',db.String(250))
-    rank = db.Column('rank',db.String(250))
-    country = db.Column('country',db.String(250))
-    profits= db.Column('profits',db.String(250))
-    marketValue = db.Column('marketValue',db.String(250))
-    ceo = db.Column('ceo',db.String(250))
-    revenue = db.Column('revenue',db.String(250))
-    headquarters = db.Column('headquarters',db.String(250))
-    industry = db.Column('industry',db.String(250))
-    state = db.Column('state',db.String(250))
-    SIC = db.Column('SIC',db.String(250))
+    id = Column(Integer, primary_key=True)
+    name = Column(String(250), nullable=False)
+    #uri = Column(String(250), nullable=False)
+    #rank = Column(String(250), nullable=False)
+    #county = Column(String(250), nullable=False)
+    profits = Column(String(250), nullable=False)
+    marketValue = Column(String(250), nullable=False)
+    #ceo = Column(String(250), nullable=False)
+    revenue = Column(String(250), nullable=False)
+   # headquarters = Column(String(250), nullable=False)
+    industry = Column(String(250), nullable=False)
+    #state = Column(String(250), nullable=False)
 
 
 
 
+class SIC(Base):
+    __tablename__ = "SIC"
+
+
+    id = Column(Integer, primary_key=True)
+    SIC = Column(Integer, nullable=False)
+    Industry_name = Column(String(250), ForeignKey('forbesglobal2000_2016.industry'))
+    Indusrty = relationship(Company)
+
+
+# configuration part
+engine = create_engine('sqlite:///CompainesData.db')
+
+Base.metadata.create_all(engine)

@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="240e099f-907f-49b2-9be8-d1571d7a6405" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SIC.csv" beforeDir="false" afterPath="$PROJECT_DIR$/SIC.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.sqlite" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/database_setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excrating.py" beforeDir="false" afterPath="$PROJECT_DIR$/excrating.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forbesglobal2000-2016.csv" beforeDir="false" afterPath="$PROJECT_DIR$/forbesglobal2000-2016.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +38,12 @@
         <item name="data" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
     </expand>
     <select />
   </component>
@@ -42,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="802">
-              <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+            <state relative-caret-position="192">
+              <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="49" />
               <folding>
                 <element signature="e#55#84#0" expanded="true" />
               </folding>
@@ -52,49 +62,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://5208634c-389c-4dff-860a-eb5d44075d19/schema/main/table/forbesglobal2000-2016">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/show.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
+            <state relative-caret-position="885">
               <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/excrating.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database_setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="76" />
+            <state relative-caret-position="301">
+              <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#17#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://5208634c-389c-4dff-860a-eb5d44075d19/schema/main/table/sqlite_master">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <entry file="file://$PROJECT_DIR$/database_setup.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state>
-              <filtering enabled="true" />
+              <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -120,17 +112,17 @@
         <option value="$PROJECT_DIR$/templates/welcome.html" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/excrating.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5fd1c6a1-4ecb-46f8-9b4f-51dfe243cd5a/console.sql" />
         <option value="$PROJECT_DIR$/templates/show.html" />
-        <option value="$PROJECT_DIR$/database_setup.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/database_setup.py" />
+        <option value="$PROJECT_DIR$/excrating.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
-    <option name="y" value="25" />
+    <option name="y" value="326" />
     <option name="width" value="1091" />
     <option name="height" value="442" />
   </component>
@@ -140,6 +132,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,7 +149,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,18 +207,19 @@
       <workItem from="1548243853001" duration="3552000" />
       <workItem from="1548251885599" duration="178000" />
       <workItem from="1548252100170" duration="2337000" />
-      <workItem from="1548315581198" duration="2698000" />
+      <workItem from="1548315581198" duration="4387000" />
+      <workItem from="1548566348083" duration="6545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45319000" />
+    <option name="totallyTimeSpent" value="53553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49872774" visible="true" weight="0.25379092" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49872774" visible="true" weight="0.25778133" />
       <window_info id="Structure" order="1" sideWeight="0.50127226" side_tool="true" weight="0.24980047" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -240,14 +233,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011971" side_tool="true" weight="0.35993487" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49880287" visible="true" weight="0.26547232" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49880287" visible="true" weight="0.25081432" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.048859935" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.19952115" />
+      <window_info anchor="right" id="Database" order="4" weight="0.19952115" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533235" />
@@ -308,53 +301,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://5208634c-389c-4dff-860a-eb5d44075d19/schema/main/table/sqlite_master">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5208634c-389c-4dff-860a-eb5d44075d19/schema/main/table/forbesglobal2000-2016">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="das://5208634c-389c-4dff-860a-eb5d44075d19/schema/main/table/forbesglobal2000-2016" />
+    <entry file="das://5208634c-389c-4dff-860a-eb5d44075d19/schema/main/table/sqlite_master" />
+    <entry file="file://$PROJECT_DIR$/templates/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+        <state relative-caret-position="192">
+          <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="49" />
           <folding>
             <element signature="e#55#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excrating.py">
+    <entry file="file://$PROJECT_DIR$/database_setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database_setup.py">
+    <entry file="file://$PROJECT_DIR$/excrating.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="76" />
+        <state relative-caret-position="301">
+          <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>

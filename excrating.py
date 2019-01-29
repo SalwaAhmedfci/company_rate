@@ -2,6 +2,8 @@ import sqlalchemy
 from sqlalchemy.orm import sessionmaker
 from database_setup import *
 import pandas as pd
+import sqlite3
+
 # opening connection with database
 
 engine = create_engine('sqlite:///CompainesData.db')
@@ -14,40 +16,32 @@ session = DBSession()
 
 df = pd.read_csv("forbesglobal2000-2016.csv")
 df1 = pd.read_csv("SIC.csv")
-#uri`, `rank`, `name`, `country`, `profits`, `marketValue`, `ceo`, `revenue`, `headquarters`, `industry`, `state`, `SIC`
-# market valuation, revenue, profits and industry
-profit_column = df.profits
-name_column = df.name
-industry_column = df.industry
-revenue_column = df.revenue
-marketvalue_column = df.marketValue
-industry_column_f = df1.Description
-SIC_column = df1.SICCode
-#print (SIC_column)
-# for i in revenue_column:
-#     print(i)
+conn = sqlite3.connect('CompainesData.db')
+c = conn.cursor()
 
 
-company = []
+# Insert a row of data
 i = 1
-while i < name_column.__len__():
-    company[i] = Company(name = name_column[i] , industry=industry_column[i], marketValue = marketvalue_column[i] , profits = profit_column[i] ,
-                         revenue = revenue_column[i] )
+while i < 2001:
+    c.execute("INSERT INTO forbesglobal2000_2016(name,profits,marketValue,revenue,industry)VALUES(?,?,?,?,?)",(str(df.name[i]),str(df.profits[i]),str(df.marketValue[i]),str(df.revenue[i]),str(df.industry[i])))
+    i = i + 1
 
-    i = i +1
-for i in company:
-    session.add(i)
-    session.commit()
+i = 1
+while i < 731:
+    c.execute("INSERT INTO look_up(SIC,industry)VALUES(?,?)", (int(df1.SICCode[i]), str(df1.Description[i])))
+    i = i + 1
+# Save (commit) the changes
+conn.commit()
+conn.close()
 
-
-# printing test
+#printing test
 com = session.query(Company).all()
 for f in com:
-    print(f.name)
-    print(f.industry)
-    print(f.profits)
-    print(f.revenue)
-    print(f.marketValue)
+     print(f.name)
+     print(f.industry)
+     print(f.profits)
+     print(f.revenue)
+     print(f.marketValue)
 
 
 

@@ -6,12 +6,12 @@ from userAgent import randomUserAgents
 from flask import Flask, render_template, request
 from database_setup import *
 import requests
+from database_setup import *
 
 #
 #
 #
-
-
+app = Flask(__name__)
 def soup(url, headers):
     session = requests.Session()
     req = session.get(url, headers=headers )
@@ -59,7 +59,10 @@ def my_form_post():
         page2_link ="https://finance.yahoo.com/quote/{0}?p={1}&.tsrc=fin-srch".format(companyname,companyname)
         head1 = randomUserAgents()
         bs2 = soup(page2_link, head1)
+        #cell = bs2.select("span[data-reactid ='39']")
         price = bs2.find('span', {'class': "Trsdu(0.3s)"}).get_text()
+       
+
         #showing results
         return render_template("show.html", companyname=companyname, mylist_rates=mylist_rates, mylist_names=mylist_names, price =price)
 

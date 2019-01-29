@@ -13,34 +13,34 @@ Base = declarative_base()
 #`uri`, `rank`, `name`, `country`, `profits`, `marketValue`, `ceo`, `revenue`, `headquarters`, `industry`, `state`, `SIC`
 
 
+class look_up(Base):
+    __tablename__ = "look_up"
+
+#contains mapping between SIC and indusrty
+    id = Column(Integer, primary_key=True)
+    SIC = Column(Integer, nullable=False)
+    industry = Column(String(250), nullable=False)
+
 
 class Company(Base):
     __tablename__ = 'forbesglobal2000_2016'
 
     id = Column(Integer, primary_key=True)
     name = Column(String(250), nullable=False)
-    #uri = Column(String(250), nullable=False)
-    #rank = Column(String(250), nullable=False)
-    #county = Column(String(250), nullable=False)
     profits = Column(String(250), nullable=False)
     marketValue = Column(String(250), nullable=False)
-    #ceo = Column(String(250), nullable=False)
     revenue = Column(String(250), nullable=False)
-   # headquarters = Column(String(250), nullable=False)
-    industry = Column(String(250), nullable=False)
-    #state = Column(String(250), nullable=False)
-
-
+    industry = Column(String(250), ForeignKey('look_up.industry'))
+    Indusrty = relationship(look_up)
 
 
 class SIC(Base):
     __tablename__ = "SIC"
 
-
+    # contains mapping between SIC and keywords
     id = Column(Integer, primary_key=True)
-    SIC = Column(Integer, nullable=False)
-    Industry_name = Column(String(250), ForeignKey('forbesglobal2000_2016.industry'))
-    Indusrty = relationship(Company)
+    SIC = Column(Integer, ForeignKey('look_up.SIC'))
+    keywords = Column(String(250), nullable=False)
 
 
 # configuration part

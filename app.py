@@ -28,43 +28,52 @@ def soup(url, headers):
 
 def get_company_info():
     companyinfo = []
+    try:
+        companyname = get_company_name()
+        print(companyname)
+            # pick up the target company
+        company = session.query(Company).filter_by(
+        name=companyname).one()
+            # fuzzy match here
+        query = company.industry
+        allindustries = []
+            # load only indusrty column from look_up
+        industries = session.query(look_up).all()
+        for ind in industries:
+            allindustries.append(ind.industry)
+        #do fuzzuy matching
+        industry = process.extractOne(query, allindustries)
+        matched_industry = industry[0]
+            # pick up the matched company indusrty and SIC
+            #print(matched_industry)
 
-    companyname = get_company_name()
-    print(companyname)
-        # pick up the target company
-    company = session.query(Company).filter_by(
-    name=companyname).one()
-        # fuzzy match here
-    query = company.industry
-    allindustries = []
-        # load only indusrty column from look_up
-    industries = session.query(look_up).all()
-    for ind in industries:
-        allindustries.append(ind.industry)
-    #do fuzzuy matching
-    industry = process.extractOne(query, allindustries)
-    matched_industry = industry[0]
-        # pick up the matched company indusrty and SIC
-        #print(matched_industry)
+        conn = sqlite3.connect('CompainesData.db')
+        c = conn.cursor()
 
-    conn = sqlite3.connect('CompainesData.db')
-    c = conn.cursor()
+        ind=c.execute(
+                "select industry,SIC from look_up where industry like ?",('%'+matched_industry+'%',))
 
-    ind=c.execute(
-            "select industry,SIC from look_up where industry like ?",('%'+matched_industry+'%',))
+        ind = ind.fetchall()
 
-    ind = ind.fetchall()
+        conn.commit()
+        conn.close()
+        companyinfo.append(company.name)
+        companyinfo.append(company.profits)
+        companyinfo.append(company.revenue)
+        companyinfo.append(company.marketValue)
+        companyinfo.append(ind[0][1])
+        companyinfo.append(ind[0][0])
+        return companyinfo
+    except:
 
-    conn.commit()
-    conn.close()
-    companyinfo.append(company.name)
-    companyinfo.append(company.profits)
-    companyinfo.append(company.revenue)
-    companyinfo.append(company.marketValue)
-    companyinfo.append(ind[0][1])
-    companyinfo.append(ind[0][0])
-    return companyinfo
+        companyinfo.append(get_company_name())
+        companyinfo.append("not covered yet")
+        companyinfo.append("not covered yet")
+        companyinfo.append("not covered yet")
+        companyinfo.append("not covered yet")
+        companyinfo.append("not covered yet")
 
+        return companyinfo
 
 
 

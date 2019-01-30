@@ -7,19 +7,66 @@ from flask import Flask, render_template, request
 from database_setup import *
 import requests
 from database_setup import *
-
-#
+from fuzzywuzzy import fuzz
+from fuzzywuzzy import process
+from excrating import *
+from sqlalchemy.orm import load_only
+import sqlite3
 #
 #
 app = Flask(__name__)
+
+def get_company_name():
+    companyname = request.form['company_name']
+    return companyname
+
 def soup(url, headers):
     session = requests.Session()
     req = session.get(url, headers=headers )
     bs = BeautifulSoup(req.text, 'html.parser')
     return bs
 
+def get_company_info():
+    companyinfo = []
 
-# eiHdrModule module snug
+    companyname = get_company_name()
+    print(companyname)
+        # pick up the target company
+    company = session.query(Company).filter_by(
+    name=companyname).one()
+        # fuzzy match here
+    query = company.industry
+    allindustries = []
+        # load only indusrty column from look_up
+    industries = session.query(look_up).all()
+    for ind in industries:
+        allindustries.append(ind.industry)
+    #do fuzzuy matching
+    industry = process.extractOne(query, allindustries)
+    matched_industry = industry[0]
+        # pick up the matched company indusrty and SIC
+        #print(matched_industry)
+
+    conn = sqlite3.connect('CompainesData.db')
+    c = conn.cursor()
+
+    ind=c.execute(
+            "select industry,SIC from look_up where industry like ?",('%'+matched_industry+'%',))
+
+    ind = ind.fetchall()
+
+    conn.commit()
+    conn.close()
+    companyinfo.append(company.name)
+    companyinfo.append(company.profits)
+    companyinfo.append(company.revenue)
+    companyinfo.append(company.marketValue)
+    companyinfo.append(ind[0][1])
+    companyinfo.append(ind[0][0])
+    return companyinfo
+
+
+
 
 @app.route('/', methods=['POST', 'GET'])
 def my_form_post():
@@ -28,7 +75,7 @@ def my_form_post():
 
         return render_template("welcome.html")
     elif request.method == 'POST':
-        companyname = request.form['company_name']
+        companyname = get_company_name()
         head = randomUserAgents()
     #scraping companyrating
         page1_link = "https://www.glassdoor.com/Reviews/company-reviews.htm?suggestCount=0&suggestChosen=false&clickSource" \
@@ -61,10 +108,10 @@ def my_form_post():
         bs2 = soup(page2_link, head1)
         #cell = bs2.select("span[data-reactid ='39']")
         price = bs2.find('span', {'class': "Trsdu(0.3s)"}).get_text()
-       
 
+        info=get_company_info()
         #showing results
-        return render_template("show.html", companyname=companyname, mylist_rates=mylist_rates, mylist_names=mylist_names, price =price)
+        return render_template("show.html", companyname=companyname, mylist_rates=mylist_rates, mylist_names=mylist_names, price =price, info =info)
 
 
 # print (rate)

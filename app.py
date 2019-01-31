@@ -12,9 +12,15 @@ from fuzzywuzzy import process
 from excrating import *
 from sqlalchemy.orm import load_only
 import sqlite3
+import re
 #
 #
 app = Flask(__name__)
+
+# def extractnum(input):
+#     numbers = re.sub(r'[a-z]+', '', input, re.I)
+#     return numbers
+
 
 def get_company_name():
     companyname = request.form['company_name']
@@ -42,27 +48,32 @@ def get_company_info():
         for ind in industries:
             allindustries.append(ind.industry)
         #do fuzzuy matching
-        industry = process.extractOne(query, allindustries)
-        matched_industry = industry[0]
+        industry = process.extract(query, allindustries)
+        #print(industry)
+        matched_industry = []
+        for i in industry:
+            matched_industry.append(i[0])
+        #print(matched_industry)
             # pick up the matched company indusrty and SIC
             #print(matched_industry)
 
         conn = sqlite3.connect('CompainesData.db')
         c = conn.cursor()
+        result = []
+        for i in matched_industry:
+            res=c.execute(
+                "select industry,SIC from look_up where industry like ?",('%'+i+'%',))
 
-        ind=c.execute(
-                "select industry,SIC from look_up where industry like ?",('%'+matched_industry+'%',))
-
-        ind = ind.fetchall()
-
+            result.append(res.fetchall())
+        #print(result)
         conn.commit()
         conn.close()
         companyinfo.append(company.name)
         companyinfo.append(company.profits)
         companyinfo.append(company.revenue)
         companyinfo.append(company.marketValue)
-        companyinfo.append(ind[0][1])
-        companyinfo.append(ind[0][0])
+        companyinfo.append(result)
+
         return companyinfo
     except:
 
@@ -116,11 +127,16 @@ def my_form_post():
         head1 = randomUserAgents()
         bs2 = soup(page2_link, head1)
         #cell = bs2.select("span[data-reactid ='39']")
-        price = bs2.find('span', {'class': "Trsdu(0.3s)"}).get_text()
+        #data - test = "PREV_CLOSE-value"
+        close =[]
 
+        p =bs2.find("td", {"data-test": "PREV_CLOSE-value"})
+        #exract numbers from text
+        #price = p.replace("Previous Close", "")
+        #print(p.get_text())
         info=get_company_info()
         #showing results
-        return render_template("show.html", companyname=companyname, mylist_rates=mylist_rates, mylist_names=mylist_names, price =price, info =info)
+        return render_template("show.html", companyname=companyname, mylist_rates=mylist_rates, mylist_names=mylist_names, price =p.get_text(), info =info)
 
 
 # print (rate)

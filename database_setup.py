@@ -10,9 +10,7 @@ from flask import jsonify
 
 Base = declarative_base()
 
-#`uri`, `rank`, `name`, `country`, `profits`, `marketValue`, `ceo`, `revenue`, `headquarters`, `industry`, `state`, `SIC`
-
-
+"""the main class which contains the industries and SICs codes """
 class look_up(Base):
     __tablename__ = "look_up"
 
@@ -21,7 +19,7 @@ class look_up(Base):
     SIC = Column(Integer, nullable=False)
     industry = Column(String(250), nullable=False)
 
-
+"""class of company refers to the industries which it offers """
 class Company(Base):
     __tablename__ = 'forbesglobal2000_2016'
 
@@ -33,7 +31,7 @@ class Company(Base):
     industry = Column(String(250), ForeignKey('look_up.industry'))
     Indusrty = relationship(look_up)
 
-
+"""not used in this version of code but if you want to enhance the peformance match a keywords and index it  """
 class SIC(Base):
     __tablename__ = "SIC"
 

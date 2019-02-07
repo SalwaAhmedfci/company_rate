@@ -1,56 +1,64 @@
-# bigRating strong margRtSm h1
-
-# !/usr/bin/env python
+# !/usr/bin/env python3
 from bs4 import BeautifulSoup
-from database_setup import *
-from database_setup import *
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 from excrating import *
 import sqlite3
 import requests
 from userAgent import *
-import re
+
 
 def get_price(name):
-    # scraping price
+    """Scrap the price and returns it"""
     page2_link = "https://finance.yahoo.com/quote/{0}?p={1}&.tsrc=fin-srch".format(name, name)
     head1 = randomUserAgents()
     bs2 = soup(page2_link, head1)
-    # cell = bs2.select("span[data-reactid ='39']")
-    # data - test = "PREV_CLOSE-value"
-    #close = []
-
-    p = bs2.find("td", {"data-test": "PREV_CLOSE-value"})
-    # exract numbers from text
-    # price = p.replace("Previous Close", "")
-    # print(p.get_text())
-
-    # showing results
-    price = p.get_text()
-    return price
-def get_marketvalue(name):
     try:
-        company = session.query(Company).filter_by(
-        name=name).one()
-        return company.marketValue
+        p = bs2.find('tr', attrs={'class': 'Bxz(bb) Bdbw(1px) Bdbs(s) Bdc($c-fuji-grey-c) H(36px)'})
+        price = p.find('td', attrs={'class': 'Ta(end) Fw(600) Lh(14px)'})
+        text1 = price.find('span', attrs={'class': 'Trsdu(0.3s)'}).get_text()
+        return text1
     except:
-        return "not covered yet"
-def get_reveune(name):
+
+        p = bs2.find('td', attrs={'class': 'data-col2 Ta(end) Pstart(20px) Pend(15px)'}).get_text()
+
+        return p
+
+
+def get_marketvalue(name):
+    """returns marketvalue of the company from the database"""
     try:
         company = session.query(Company).filter_by(
-        name=name).one()
+            name=name).one()
+        return company.marketValue
+
+    except:
+
+        return "not covered yet"
+
+
+def get_reveune(name):
+    """returns revenue of the company from the database"""
+    try:
+        company = session.query(Company).filter_by(
+            name=name).one()
         return company.revenue
     except:
         return "not covered yet"
+
+
 def get_profit(name):
+    """returns the profit of the company from the database"""
     try:
         company = session.query(Company).filter_by(
-        name=name).one()
+            name=name).one()
         return company.profits
     except:
         return "not covered yet"
+
+
 def get_company_rating(name):
+    """scrap the rating from glassdoor and returns it"""
     companyname = name
     head = randomUserAgents()
     # scraping companyrating
@@ -90,64 +98,57 @@ def get_company_name(name):
     companyname = name
     return companyname
 
+
 def soup(url, headers):
+    """creating the session , parsing the html tree to beautifulsoup"""
     session = requests.Session()
-    req = session.get(url, headers=headers )
+    req = session.get(url, headers=headers)
     bs = BeautifulSoup(req.text, 'html.parser')
     return bs
 
+
 def get_company_indusrty(name):
-    companyinfo = []
-    enhancement_ratio = 50
+    """do fuzzy logic to get the best matched keywords to use it in searching for industries from the database"""
+    enhancement_ratio = 50  # you can control the precentage of matching from here by increasing the number you are restricting the matches
     companyname = name
     try:
         # pick up the target company
         company = session.query(Company).filter_by(
-        name=companyname).one()
+            name=companyname).one()
         # fuzzy match here
         query = company.industry
         allindustries = []
-                # load only indusrty column from look_up
+        # load only industry column from look_up
         industries = session.query(look_up).all()
         for ind in industries:
 
-            if fuzz.ratio(query,ind.industry) > enhancement_ratio :
+            if fuzz.ratio(query, ind.industry) > enhancement_ratio:
 
                 allindustries.append(ind.industry)
             else:
                 continue
-        #do fuzzuy matching
+        # do fuzzuy matching
 
         industry = process.extract(query, allindustries)
-        #print(industry)
+        # print(industry)
         matched_industry = []
         for i in industry:
             matched_industry.append(i[0])
+        # print(matched_industry)
         # pick up the matched company indusrty and SIC
         conn = sqlite3.connect('CompainesData.db')
         c = conn.cursor()
         result = []
         for i in matched_industry:
-            res=c.execute(
-                "select industry,SIC from look_up where industry like ?",('%'+i+'%',))
+            res = c.execute(
+                "select industry,SIC from look_up where industry like ?", ('%' + i + '%',))
 
             result.append(res.fetchall())
 
         conn.commit()
         conn.close()
-        companyinfo.append(result)
 
-        return companyinfo
+        return result
     except:
 
-
         return "not covered yet"
-
-
-
-
-
-
-
-
-
